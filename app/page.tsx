@@ -16,13 +16,12 @@ export default function Home() {
           <p className="text-gray-500 pb-2">Live like the stars in these luxurious Southern California estates</p>
         </div>
         <div>
-          <div>
+          <div className="relative aspect-[16/9] bg-black rounded-lg">
             <Image
               src ="/Cali_mansion.jpg"
               alt = "Cali_mansion"
-              width = {400}
-              height = {200}
-              className="rounded-lg"      
+              fill
+              className="object-cover rounded-lg"      
             />
           </div>
           <div className="relative -mt-16 px-4">
@@ -53,14 +52,16 @@ export default function Home() {
           </div>
           <p className="text-gray-500 pb-2">Enjoy the view over the Hudson bay at the top of the finest city`s estates</p>
         </div>
-        <div>
+        <div className="mt-6 sm:flex sm:gap-4 sm:overflow-x-auto px-4">
+          {[1,2,3,4].map((item) => (
+        <div key = {item} className="sm:max-w-xs sm:w-full sm:flex-shrink-0 sm:px-2">
           <div>
+          <div className="relative aspect-[16/9] bg-black rounded-lg">
             <Image
               src ="/a new york mansion.jpg"
               alt = "NYC_mansion"
-              width = {400}
-              height = {200}
-              className="rounded-lg"      
+              fill
+              className="object-cover rounded-lg shadow-md"      
             />
           </div>
           <div className="relative -mt-16 px-4">
@@ -79,6 +80,10 @@ export default function Home() {
             </div>
           </div>
           </div>
+          </div>
+          
+        </div>
+          ))}
         </div>
       </div>
       </main>
