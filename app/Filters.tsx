@@ -51,22 +51,22 @@ return  <section className="bg-gray-700">
         </div>
     {isOpenFilters &&
       <form>
-          <div className="px-4">
-            <div className="flex -mx-2">
-              <label className="block w-1/2 px-2">
+          <div className="px-4 sm:flex sm:gap-4">
+            <div className="flex gap-4 sm:w-1/2">
+              <label className="block w-1/2">
                 <span className="text-gray-500 text-sm font-semibold">Bedrooms</span>
                 <select className="form-select block w-full bg-gray-100 rounded-lg">
                   <option>4</option>
                 </select>
               </label>
-              <label className="block w-1/2 px-2">
+              <label className="block w-1/2">
                 <span className="text-gray-500 text-sm font-semibold">Bathrooms</span>
                 <select className="form-select block w-full bg-gray-100 rounded-lg">
                   <option>2</option>
                 </select>
               </label>
             </div>
-            <label>
+            <label className="mt-4 sm:w-1/2 sm:mt-0 block">
                 <span className="text-gray-500 text-sm font-semibold">Price range</span>
                 <select className="form-select block w-full bg-gray-100 rounded-lg">
                   <option>Up to $2,000/wk</option>
@@ -77,22 +77,24 @@ return  <section className="bg-gray-700">
             <span>
               Property Type
             </span>
-            <label className="block">
+            <div className="sm:flex sm:-mx-2">
+            <label className="mt-3 sm:w-1/4 sm:px-2 flex items-center">
               <input className="mr-2" type = "radio" name = "property" value = "house"/>
               House
             </label>
-            <label className="block">
+            <label className="mt-3 sm:w-1/4 sm:px-2 flex items-center">
               <input className="mr-2" type = "radio" name = "property" value = "apartment"/>
               Apartment
             </label>
-            <label className="block">
+            <label className="mt-3 sm:w-1/4 sm:px-2 flex items-center">
               <input className="mr-2" type = "radio" name = "property" value = "loft"/>
               Loft
             </label>
-            <label>
+            <label className="mt-3 sm:w-1/4 sm:px-2 flex items-center">
               <input className="mr-2" type = "radio" name = "property" value = "townhouse"/>
               Townhouse
             </label>
+            </div>
           </div>
            <div className="text-gray-300 px-4 py-2">
             <span>
